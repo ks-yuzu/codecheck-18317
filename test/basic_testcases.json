@@ -1,0 +1,84 @@
+{
+  "testcases": [
+    {
+      "description": "a, b, mが1桁のケースが計算できる",
+      "input": "2 3 1",
+      "output": "5"
+    },
+    {
+      "description": "aが2桁、b, mが1桁のケースが計算できる",
+      "input": "11 3 2",
+      "output": "113"
+    },
+    {
+      "description": "a, bが2桁、mが1桁のケースが計算できる",
+      "input": "11 13 7",
+      "output" : "409"
+    },
+    {
+      "description": "a, b, mが2桁のケースが計算できる",
+      "input": "47 13 50",
+      "output": "20411"
+    },
+    {
+      "description": "a, bが2桁、mが3桁のケースが計算できる",
+      "input": "29 47 239",
+      "output": "64601"
+    },
+    {
+      "description": "a, bが3桁、mが2桁のケースが計算できる",
+      "input": "113 239 71",
+      "output": "98323"
+    },
+    {
+      "description": "a, b, cが3桁のケースが計算できる",
+      "input": "337 743 163",
+      "output": "680809"
+    },
+    {
+      "description": "a, bが3桁、mが4桁のケースが計算できる",
+      "input": "239 113 1000",
+      "output": "3250991"
+    },
+    {
+      "description": "a, bが4桁、mが3桁のケースが計算できる",
+      "input": "3359 4793 120",
+      "output": "5157499"
+    },
+    {
+      "description": "a, bが5桁、mが3桁のケースが計算できる",
+      "input": "48119 81899 279",
+      "output": "230956861"
+    },
+    {
+      "description": "a, bが5桁、mが4桁のケースが計算できる",
+      "input": "48119 81899 1000",
+      "output": "952838099"
+    },
+    {
+      "description": "a, bが6桁、mが3桁のケースが計算できる",
+      "input": "105563 125717 271",
+      "output": "617458141"
+    },
+    {
+      "description": "a, bが6桁、mが3桁のケースが計算できる",
+      "input": "105563 125717 760",
+      "output": "1635296587"
+    },
+    {
+      "description": "a, bが互いに素でない場合の処理が行える",
+      "input": "6 18 3",
+      "output": "-1"
+    }
+  ],
+  "illegal": [
+    {
+      "description": "無効な入力に対して-1を出力する",
+      "input": "hoge"
+    },
+    {
+      "description": "引数が足りない場合に対して-1を出力する",
+      "input": "3 2"
+    }
+  ]
+}
