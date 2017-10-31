@@ -1,5 +1,7 @@
 "use strict";
 
+var MAX = 5000000
+
 function say(str) {
     console.log(str)
 }
@@ -14,8 +16,8 @@ function gcd(x, y) {
 }
 
 
+
 function getPrimes() {
-    var MAX = 10000
     var f_prime = new Array(MAX);
 
     //全ての数に対して素数フラグを立てる
@@ -56,7 +58,7 @@ function dirichlet(argv) {
 
     var primes = getPrimes()
     var prime_count = 0
-    for ( var n = 1; n < 100000; n++ ) {
+    for ( var n = 1; n < MAX; n++ ) {
         if ( primes[a * n + b] ) {
             prime_count++
             if ( prime_count >= m ) return a * n + b
@@ -84,6 +86,7 @@ function main(argv) {
     }
 
     say( dirichlet(argv) )
+    return 0
 }
 
 module.exports = main;
