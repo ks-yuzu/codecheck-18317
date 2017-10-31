@@ -1,6 +1,6 @@
 "use strict";
 
-var MAX = 5000000
+var MAX = 1000000
 
 function say(str) {
     console.log(str)
