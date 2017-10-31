@@ -1,3 +1,5 @@
+build:
+- npm install
 env:
-  APP_COMMAND: python3 main.py
+  APP_COMMAND: node index.js
 test: mocha
